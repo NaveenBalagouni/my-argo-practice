@@ -1,3 +1,4 @@
+# YAML file defines an Argo CD Application resource for the my-single-git-app application. It specifies the source repository, the target revision and path, and the destination Kubernetes cluster and namespace where the application should be deployed. The sync policy is set to automated but does not enable pruning or self-healing. It also includes a sync option to create the namespace if it doesn't already exist. 
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
