@@ -1,3 +1,4 @@
+# This YAML defines an Argo CD ApplicationSet named sample-multiple-sources, which automates the creation of multiple Argo CD applications from specified directories within a Git repository. It generates applications based on the contents of the two-git-sources/git-sources and two-git-sources/two-git paths, allowing each application to be deployed to the Kubernetes cluster in the applicationsets namespace
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
