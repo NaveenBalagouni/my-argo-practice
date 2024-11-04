@@ -9,7 +9,7 @@ spec:
         repoURL: 'https://github.com/NaveenBalagouni/argocd-training.git'
         revision: HEAD
         directories:
-          - path: two-git
+          - path: single-git-source
           - path: sources-git
   template:
     metadata:
