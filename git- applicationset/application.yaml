@@ -10,7 +10,7 @@ spec:
         revision: HEAD
         directories:
           - path: two-git-sources/git-sources
-          - path: sources-git
+          - path: two-git-sources/two-git
   template:
     metadata:
       name: '{{path.basename}}'
