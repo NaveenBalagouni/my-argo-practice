@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/NaveenBalagouni/my-single-git-app.git'
-    targetRevision: HEAD
+    targetRevision: main
     path: single-git-source
   destination:
     server: 'https://kubernetes.default.svc'
