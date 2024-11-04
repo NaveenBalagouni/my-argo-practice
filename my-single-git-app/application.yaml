@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/NaveenBalagouni/argocd-training.git'
+    repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice'
     path: single-git-source
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: default
+    namespace: naveen
   syncPolicy:
     automated:
       prune: true
