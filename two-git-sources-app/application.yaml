@@ -10,7 +10,7 @@ spec:
     namespace: naveen
   sources:
     - repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git
-      path: datas/git/two-git-source/git1
+      path: two-git-sources/git-sources
       targetRevision: test
     - repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git
       path: datas/git/two-git-source/git2
