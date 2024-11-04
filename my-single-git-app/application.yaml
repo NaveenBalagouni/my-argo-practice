@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/NaveenBalagouni/argocd-training.git'
+    repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
     path: git-source
     targetRevision: HEAD
   destination:
