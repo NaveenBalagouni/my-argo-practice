@@ -1,3 +1,4 @@
+# YAML defines a Kubernetes ConfigMap named game-demo, which stores configuration settings for a game application. It includes simple key-value pairs such as the initial number of player lives and the name of the UI properties file, as well as file-like keys containing game-specific properties
 apiVersion: v1
 kind: ConfigMap
 metadata:
