@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/NaveenBalagouni/my-single-git-app.git'
     targetRevision: HEAD
-    path: my-single-git-app
+    path: single-git-source
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: naveen
