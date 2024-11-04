@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
-kind: application
+kind: Application
 metadata:
-  name: my-apps
+  name: my-app
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
-    path: 'single-git-source'
-    targetRevision: main
+    repoURL: 'https://github.com/NaveenBalagouni/argocd-training.git'
+    path: git-source
+    targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: naveen
+    namespace: default
   syncPolicy:
     automated:
       prune: true
