@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   destination:
-    server: https://kubernetes.default.svc
+    server: 'https://kubernetes.default.svc'
     namespace: naveen
   sources:
-    - repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git
+    - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
       path: two-git-sources/git-sources
-      targetRevision: test
-    - repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git
-      path: datas/git/two-git-source/git2
-      targetRevision: test
+      targetRevision: main
+    - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
+      path: two-git-sources/two-git
+      targetRevision: main
