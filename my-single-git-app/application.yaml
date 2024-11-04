@@ -1,18 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app
+  name: my-single-git-app
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
-    path: single-git-source
+    repoURL: 'https://github.com/NaveenBalagouni/my-single-git-app.git'
     targetRevision: HEAD
+    path: my-single-git-app
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: naveen
   syncPolicy:
     automated:
-      prune: true
-      selfHeal: true
+      prune: false
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
