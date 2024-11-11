@@ -10,7 +10,7 @@ spec:
         repoURL: "https://github.com/NaveenBalagouni/my-argo-practice.git"
         revision: "main"
         directories:
-          - path: "datas/application-set-date/git-data/*"
+          - path: "Generator-resources/git-generator-resource/*"
   template:
     metadata:
       name: '{{path.basename}}'
@@ -21,7 +21,7 @@ spec:
         targetRevision: "HEAD"
         path: '{{path}}'
       destination:
-        server: "https://target-vcluster.gartner.opsmx.net:443"
+        server: "https://kubernetes.default.svc"
         namespace: 'git-appset'
       syncPolicy:
         automated:
