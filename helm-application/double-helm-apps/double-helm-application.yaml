@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   sources:
     - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
-      path: my-helm-charts/single-helm-resources
+      path: my-helm-chart-resources/double-helm-resource
       targetRevision: main
       helm:
         valueFiles:
