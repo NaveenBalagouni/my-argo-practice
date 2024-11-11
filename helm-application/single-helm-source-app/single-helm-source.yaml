@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: single-helm-chart-app
+  name: single-helm-app
   namespace: argocd
 spec:
   destination:
     namespace: single-helm
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/NaveenBalagouni/my-helm-chart.git'
+    repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
     path: my-helm-chart-resources/single-helm-resource
     targetRevision: main
     helm:
