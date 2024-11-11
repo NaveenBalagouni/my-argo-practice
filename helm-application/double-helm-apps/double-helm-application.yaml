@@ -15,7 +15,7 @@ spec:
         valueFiles:
           - values.yaml
     - repoURL: 'https://github.com/NaveenBalagouni/my-helm-chart.git'
-      path: my-helm-charts/double-helm-resource
+      path: my-helm-chart-resources/single-helm-resource
       targetRevision: main
       helm:
         valueFiles:
