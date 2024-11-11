@@ -7,13 +7,13 @@ spec:
   generators:
     - list:
         elements:
-          - name: list-application-set-app1
-            repoURL: https://github.com/OpsMx/argo-customer-demo.git          #pod
-            targetRevision: HEAD
+          - name: list-applicationset-first-application
+            repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git          #pod
+            targetRevision: main
             path: datas/application-set-date/list-data/app1
-          - name: list-application-set-app2
-            repoURL: https://github.com/OpsMx/argo-customer-demo.git           #service
-            targetRevision: HEAD
+          - name: list-applicationset-second-application
+            repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git           #service
+            targetRevision: main
             path: datas/application-set-date/list-data/app2
   template:
     metadata:
