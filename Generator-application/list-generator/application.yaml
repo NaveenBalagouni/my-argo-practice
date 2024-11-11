@@ -10,11 +10,11 @@ spec:
           - name: list-applicationset-first-application
             repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git          #pod
             targetRevision: main
-            path: datas/application-set-date/list-data/app1
+            path: Generator-resources/list-generator-resource/app1
           - name: list-applicationset-second-application
             repoURL: https://github.com/NaveenBalagouni/my-argo-practice.git           #service
             targetRevision: main
-            path: datas/application-set-date/list-data/app2
+            path: Generator-resources/list-generator-resource/app2
   template:
     metadata:
       name: '{{name}}'
