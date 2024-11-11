@@ -7,8 +7,8 @@ metadata:
 spec:
   generators:
     - git:                 
-        repoURL: "https://github.com/OpsMx/argo-customer-demo.git"
-        revision: "HEAD"
+        repoURL: "https://github.com/NaveenBalagouni/my-argo-practice.git"
+        revision: "main"
         directories:
           - path: "datas/application-set-date/git-data/*"
   template:
@@ -17,12 +17,12 @@ spec:
     spec:
       project: default
       source:
-        repoURL: "https://github.com/OpsMx/argo-customer-demo.git"
+        repoURL: "https://github.com/NaveenBalagouni/my-argo-practice.git"
         targetRevision: "HEAD"
         path: '{{path}}'
       destination:
         server: "https://target-vcluster.gartner.opsmx.net:443"
-        namespace: 'argocd-kt'
+        namespace: 'git-appset'
       syncPolicy:
         automated:
           prune: true
