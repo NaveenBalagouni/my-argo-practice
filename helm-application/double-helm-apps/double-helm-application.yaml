@@ -8,13 +8,13 @@ spec:
     namespace: double-helm
     server: 'https://kubernetes.default.svc'
   sources:
-    - repoURL: 'https://github.com/NaveenBalagouni/my-helm-chart.git'
+    - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
       path: my-helm-charts/single-helm-resources
       targetRevision: main
       helm:
         valueFiles:
           - values.yaml
-    - repoURL: 'https://github.com/NaveenBalagouni/my-helm-chart.git'
+    - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
       path: my-helm-chart-resources/single-helm-resource
       targetRevision: main
       helm:
