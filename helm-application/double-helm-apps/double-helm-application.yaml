@@ -8,19 +8,19 @@ spec:
     namespace: double-helm
     server: 'https://kubernetes.default.svc'
   sources:
-    - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
-      path: my-helm-chart-resources/double-helm-resource
+    - repoURL: 'https://github.com/OpsMx/argo-sample-apps.git'
+      path: apps-resources/single-helm-resource
       targetRevision: main
       helm:
         valueFiles:
           - values.yaml
-    - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
-      path: my-helm-chart-resources/single-helm-resource
+    - repoURL: 'https://github.com/OpsMx/argo-sample-apps.git'
+      path: apps-resources/double-helm-resource
       targetRevision: main
       helm:
         valueFiles:
           - values.yaml
-  project: default
+  project: qa-environment
   syncPolicy:
     automated:
       prune: true
