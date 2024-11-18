@@ -7,9 +7,9 @@ spec:
   generators:
     - list:
         elements:
-          - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
+          - repoURL: 'https://github.com/OpsMx/argo-sample-apps.git'
             targetRevision: HEAD
-            path: my-helm-charts/single-helm-resource
+            path: apps-resources/single-helm-resource
             helm:
               valueFiles:
                 - values.yaml
@@ -18,10 +18,10 @@ spec:
           matchLabels:
             environment: qa
     - git:
-        repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
+        repoURL: 'https://github.com/OpsMx/argo-sample-apps.git'
         revision: main
         directories:
-          - path: single-git-source
+          - path: apps-resources/single-git-resources
   template:
     metadata:
       name: test-app-ui-{{name}}
