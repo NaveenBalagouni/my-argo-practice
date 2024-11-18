@@ -13,34 +13,13 @@ spec:
             helm:
               valueFiles:
                 - values.yaml
-  template:
-    metadata:
-      name: '{{appName}}'
-    spec:
-      project: default
-      source:
-        repoURL: '{{repoURL}}'
-        targetRevision: '{{targetRevision}}'
-        path: '{{path}}'
-        helm:
-          valueFiles:
-            - '{{helm.valueFiles}}'
-      destination:
-        server: 'https://kubernetes.default.svc'
-        namespace: '{{namespace}}'
-      syncPolicy:
-        automated:
-          prune: true
-          selfHeal: true
-      syncOptions:
-        - CreateNamespace=true
-  generators:
     - clusters:
         selector:
           matchLabels:
             environment: qa
     - git:
         repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
+        revision: main
         directories:
           - path: single-git-source
   template:
@@ -49,12 +28,12 @@ spec:
     spec:
       project: qa-environment
       source:
-        repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
-        targetRevision: main
-        path: my-helm-chart-resources/double-helm-resource
+        repoURL: '{{repoURL}}'
+        targetRevision: '{{targetRevision}}'
+        path: '{{path}}'
         helm:
           valueFiles:
-            - values.yaml
+            - '{{helm.valueFiles}}'
       destination:
         server: 'https://kubernetes.default.svc'
         namespace: '{{name}}'
