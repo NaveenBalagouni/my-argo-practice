@@ -8,7 +8,7 @@ spec:
     - list:
         elements:
           - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
-            targetRevision: main
+            targetRevision: HEAD
             path: my-helm-charts/single-helm-resource
             helm:
               valueFiles:
