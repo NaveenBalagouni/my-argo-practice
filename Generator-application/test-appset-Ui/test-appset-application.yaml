@@ -51,7 +51,7 @@ spec:
       source:
         repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
         targetRevision: main
-        path: apps-resources/test-app-ui
+        path: my-helm-chart-resources/double-helm-resource
         helm:
           valueFiles:
             - values.yaml
