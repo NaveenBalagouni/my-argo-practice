@@ -42,7 +42,7 @@ spec:
     - git:
         repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
         directories:
-          - path: apps-resources/test-app-ui
+          - path: single-git-source
   template:
     metadata:
       name: test-app-ui-{{name}}
