@@ -7,7 +7,7 @@ spec:
   generators:
     - list:
         elements:
-          - repoURL: 'https://github.com/OpsMx/argo-sample-apps.git'
+          - repoURL: 'https://github.com/NaveenBalagouni/my-argo-practice.git'
             targetRevision: main
             path: apps-resources/test-app-ui
             helm:
