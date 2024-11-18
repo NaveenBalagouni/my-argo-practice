@@ -21,7 +21,7 @@ spec:
         repoURL: 'https://github.com/OpsMx/argo-sample-apps.git'
         revision: main
         directories:
-          - path: apps-resources/single-git-resources
+          - path: apps-resources/double-helm-resource
   template:
     metadata:
       name: test-app-ui-{{name}}
