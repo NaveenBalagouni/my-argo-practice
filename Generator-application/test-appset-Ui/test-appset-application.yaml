@@ -26,7 +26,7 @@ spec:
     metadata:
       name: test-app-ui-{{name}}
     spec:
-      project: qa-environment
+      project: default
       source:
         repoURL: '{{repoURL}}'
         targetRevision: '{{targetRevision}}'
